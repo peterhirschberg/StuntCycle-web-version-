@@ -1,0 +1,67 @@
+html, body {
+  touch-action: none;
+  overscroll-behavior: none;
+  -webkit-overscroll-behavior: none;
+}
+body {
+    text-align: center;
+    background-color: black;
+    padding-top: 32px;
+    overflow: hidden;
+    #track {
+        background-color: #7f7f7f;
+        border-left: 2px solid black;
+        height: 475px;
+        width: 40px;
+        position: relative;
+        box-sizing: border-box;
+    }
+    #thumb {
+        background-color: #afafaf;
+        height: 40px;
+        width: 38px;
+        position: absolute;
+        box-sizing: border-box;
+        cursor: pointer;
+        text-align: center;
+        vertical-align: middle;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 6px;
+        color: white;
+        padding-top: 18px;
+        user-select: none;
+    }
+    .container {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        position: relative;
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;        
+    }
+    #restart {
+        margin-top: 8px;
+    }
+    #throttleMessage,
+    #score {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #score {
+        font-size: 28px;
+        color: black;
+        position: absolute;
+        top: 8px;
+        left: 590px;
+        font-weight: 900;
+    }
+    #throttleMessage {
+        display: none;
+        color: red;
+        margin-top: 8px;
+    }
+}
